@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "triggerdotdev-nextjs",
+  "author": {
+    "name": "Chia1104",
+    "email": "yuyuchia7423@gmail.com"
+  },
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:next": "PORT=3003 next dev",
+    "dev": "turbo run dev:next",
+    "build:next": "next build",
+    "build": "turbo run build:next",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format": "prettier --write \"**/*.{js,jsx,cjs,mjs,ts,tsx,md}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,cjs,mjs,ts,tsx,md}\"",
+    "type:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^14.0.4",
+    "@trigger.dev/github": "^2.3.8",
+    "@trigger.dev/nextjs": "^2.3.8",
+    "@trigger.dev/sdk": "^2.3.8",
+    "clsx": "^2.0.0",
+    "dayjs": "^1.11.10",
+    "next": "^14.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "server-only": "^0.0.1",
+    "sharp": "^0.33.1",
+    "tailwind-merge": "^2.2.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.1.2",
+    "@total-typescript/ts-reset": "^0.5.1",
+    "@types/node": "20.10.5",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "10.4.16",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "happy-dom": "^12.10.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "postcss": "8.4.32",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.9",
+    "shell-quote": "^1.8.1",
+    "tailwindcss": "3.4.0",
+    "turbo": "^1.11.2",
+    "typescript": "5.3.3",
+    "vitest": "^1.1.0"
+  },
+  "trigger.dev": {
+    "endpointId": "triggerdotdev-nextjs"
+  }
+}
